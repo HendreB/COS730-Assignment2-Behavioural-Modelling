@@ -155,9 +155,9 @@ class SubmissionController:
         self.evaluation_manager.start_evaluation(filtered_reviewers)
 
 
-# ==========================================
+
 # EXECUTION AND BENCHMARKING (Task 6 Prep)
-# ==========================================
+
 if __name__ == "__main__":
     # Instantiate the system components
     validator = Validator()
@@ -170,9 +170,7 @@ if __name__ == "__main__":
     controller = SubmissionController(validator, db, reviewer_manager, evaluation_manager)
     
     # Run the system
-    print("==================================================")
     print("   STARTING BASELINE SYSTEM EXECUTION")
-    print("==================================================")
     
     # We use perf_counter for accurate benchmarking
     start_time = time.perf_counter() 
@@ -182,6 +180,5 @@ if __name__ == "__main__":
     
     end_time = time.perf_counter()
     
-    print("\n==================================================")
+    print("\n")
     print(f"   EXECUTION FINISHED IN: {end_time - start_time:.4f} seconds")
-    print("==================================================")
