@@ -77,7 +77,7 @@ class EvaluationManager:
         avg_score = self.calculate_average()
         consensus = self.check_consensus()
         
-        # Centralized Decision Logic (Task 3 Integration)
+        # Centralized Decision Logic
         outcome = self.evaluate_decision_table(avg_score, consensus)
         
         self.notification_service.dispatch_notification(outcome)

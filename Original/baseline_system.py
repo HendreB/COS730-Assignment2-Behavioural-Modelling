@@ -54,7 +54,7 @@ class Reviewer:
         print(f"[{self.name}] Performing review and submitting score...")
         score = random.randint(40, 100) # Random score for testing
         
-        # Reviewer pushes score directly to EvaluationManager (poor design from diagram)
+        # Reviewer pushes score directly to EvaluationManager
         evaluation_manager.submit_score(score)
 
 class NotificationService:
@@ -156,7 +156,7 @@ class SubmissionController:
 
 
 
-# EXECUTION AND BENCHMARKING (Task 6 Prep)
+# EXECUTION AND BENCHMARKING
 
 if __name__ == "__main__":
     # Instantiate the system components
